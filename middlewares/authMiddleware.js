@@ -1,6 +1,6 @@
 import JWT from "jsonwebtoken";
 
-const a = 20;
+const a = 18;
 const userAuth = async (req, res, next) => {
   const authHeader = req.headers.authorization;
   if (!authHeader || !authHeader.startsWith("Bearer")) {
