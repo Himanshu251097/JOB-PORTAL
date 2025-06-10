@@ -1,6 +1,6 @@
 import JWT from "jsonwebtoken";
 
-const a = 10;
+const a = 15;
 const userAuth = async (req, res, next) => {
   const authHeader = req.headers.authorization;
   if (!authHeader || !authHeader.startsWith("Bearer")) {
@@ -12,6 +12,7 @@ const userAuth = async (req, res, next) => {
     req.user = { userId: payload.userID };
     next();
   } catch (error) {
+    git;
     next("Auth failed");
   }
 };
